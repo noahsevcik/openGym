@@ -99,3 +99,5 @@ FROM base AS default
 # every vulnerability the image scan ever reported lived — none of them was in a package the
 # app uses. Gone from the published image; the coach target keeps npm for the Codex CLI.
 RUN rm -rf /usr/local/lib/node_modules/npm /usr/local/bin/npm /usr/local/bin/npx
+
+FROM coach AS railway
